@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>justify-content</title>
+    <style>
+        .container{
+            max-width: 50%;
+            border: 2px solid black;
+            margin: 0;
+            display: flex;
+            min-height: 300px;
+
+        }
+        
+        .item{
+            background-color: aquamarine;
+            margin: 5px;
+            text-align: center;
+            color: green;
+        }
+        .flex-start{
+            justify-content: flex-start;
+            flex-direction: column;
+        }
+        .flex-end{
+            justify-content: flex-end;
+            flex-direction: column;
+        }
+        .center{
+            justify-content: center;
+            flex-direction: column;
+        }
+        .space-between{
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        .space-around{
+            justify-content: space-around;
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+<body>
+    <p>flex-start</p>
+    <section class="container flex-start">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </section>
+    <p>flex-end</p>
+    <section class="container flex-end">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </section>
+    <p>center</p>
+    <section class="container center">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </section>
+    <p>space-between</p>
+    <section class="container space-between">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </section>
+    <p>space-around</p>
+    <section class="container space-around">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </section>
+</body>
+</html>

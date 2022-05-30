@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Align-Items</title>
+    <style>
+        
+        .container{
+            max-width: 350px;
+            border: 1px solid black;
+            display: flex;
+            
+        }
+        .item{
+            background-color: cornflowerblue;
+            margin: 5px;
+            color: darkblue;
+            text-align: center;
+            flex: 1;
+        }
+        .flex{
+            flex: 1;
+        }
+        .center{
+            align-items: center;
+            flex-direction: column;
+        }
+        .stretch{
+            align-items: stretch;
+            flex-direction: column;
+            
+        }
+        .flex-start{
+            align-items:flex-start;
+            flex-direction: column;
+        }
+        .flex-end{
+            align-items:flex-end;
+            flex-direction: column;
+        }
+        .baseline{
+            align-items:baseline;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+   
+    <p>center</p>
+    <section class="container center">
+        <div class="item">Edson</div>
+        <div class="item">Colalto</div>
+        <div class="item">Junior</div>
+    </section>
+    <p>stretch</p>
+    <section class="container stretch">
+        <div class="item">Edson</div>
+        <div class="item">Colalto Colalto Colalto</div>
+        <div class="item">Junior Junior Junior Junior junior Junior Junior</div>
+    </section>
+    <p>flex-start</p>
+    <section class="container flex-start">
+        <div class="item">Edson</div>
+        <div class="item">ColaltoColalto Colalto Colalto</div>
+        <div class="item">Junior JuniorJuniorJuniorJunior</div>
+    </section>
+    <p>flex-end</p>
+    <section class="container flex-end">
+        <div class="item">Edson</div>
+        <div class="item">ColaltoColalto Colalto Colalto</div>
+        <div class="item">Junior JuniorJuniorJuniorJunior</div>
+    </section>
+    <p>baseline</p>
+    <section class="container baseline">
+        <div class="item">Edson</div>
+        <div class="item">ColaltoColalto Colalto Colalto</div>
+        <div class="item">Junior JuniorJuniorJuniorJunior</div>
+    </section>
+
+</body>
+</html>
