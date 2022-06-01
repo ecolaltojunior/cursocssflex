@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.flex-container{
+    display: flex;
+    width: 100%;    
+}
+
+#topo{
+    width: 100%;
+    background-color: darkslategray;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: center;
+    
+  }
+#conteudo{
+    min-height: 800px;
+}
+.form{
+    
+    margin: auto;
+    margin-top: 15%;
+    width: 50%;
+
+}
+.form form{
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+     border: 2px solid #000;
+     min-height: 300px;
+     justify-content: center;
+    
+          
+ }
+
+
+input{
+    width: 70%;
+    text-align: center;
+    padding: 2% 0;
+    
+    
+ }
+
+button{
+     width: 50%;
+     padding: 2%;
+     
+ }
+
+ #rodape{
+    width: 100%;
+    background-color: darkslategray;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    justify-content: center;
+ }
